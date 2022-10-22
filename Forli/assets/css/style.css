@@ -1,0 +1,508 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+::before, 
+::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    
+}
+
+.top-header{
+    width: 100%;
+    background: #7C170E;
+    padding: 8px;
+
+}
+.icon-right i {
+    font-size: 15px;
+    color: #fff;
+    margin-right: 4px;
+}
+.text-right a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 14px;
+}
+.icon-left i {
+    margin-right: 3px;
+    font-size: 14px;
+    color: #fff;
+}
+.text-left a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+.container {
+   width: min(80%);
+   margin: auto;
+}
+
+
+
+.content-box {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+header.header {
+    background: #921B11;
+   
+   
+
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo figure img {
+    width: 157px;
+}
+nav.menu {
+    display: flex;
+}
+.menu ul{
+    display: flex;
+}
+
+nav.menu ul li {
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 8px;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+}
+nav.menu ul li:hover > a{
+    color: tomato;
+}
+
+.menu ul li ul {
+    position: absolute;
+    top: 18px;
+    left: 0px;
+    width: 186px;
+    background: #921B11;
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    padding: 8px;
+    transition: 0.4s;
+    transform: scaleY(0);
+    transform-origin: top center;
+    z-index: 10;
+
+   
+   
+}
+.menu ul li ul li {
+    margin-top: 8px;
+    line-height: 30px;
+}
+
+
+.menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+ 
+}
+.menu ul ul.submenu{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: #7C170E;
+    display: none;
+    transition: 0.4s !important;
+}
+.menu ul ul li:hover .submenu{
+  display: block;
+  
+}
+
+
+.language{
+    border-left: 1px solid #fff;
+}
+.language ul li ul{
+    width: 80px;
+  
+}
+/* End Menu Section */
+
+/* Start Destinations section */
+.destinations-slider {
+    display: flex;
+}
+
+.destinations-item {
+    width: min(350px);
+    border: 1px solid black;
+    margin: 5px;
+}
+.destinations-item img {
+    max-width: 100%;
+}
+
+
+.bx-wrapper{
+  border: none;
+}
+section.choose-us {
+    padding: 20px 0;
+}
+.choose-wrapper {
+    display: flex;
+}
+
+.choose-left {
+    width: 50%;
+    height: 538px;
+}
+.choose-slider img {
+    max-width: 100%;
+    height: 538px;
+    object-fit: cover;
+    object-position: 100%;
+}
+.choose-right {
+    width: 50%;
+    height: 538px;
+    background: rgb(209, 4, 33);
+    text-align: center;
+}
+.choose-text {
+    padding: 90px 30px 51px 47px;
+}
+.choose-text h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 20px 0px;
+}
+.choose-text h1 {
+    color: #fff;
+    font-size: 3.4rem;
+    padding-bottom: 25px;
+}
+.choose-text h3 {
+    color: #fff;
+    font-size: 1.7rem;
+}
+.choose-text p {
+    color: #fff;
+    font-size: 1.3em;
+    padding: 64px 0px;
+    text-align: left;
+    line-height: 20px;
+}
+.choose-text a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    border: 0.8px solid #ccc;
+    padding: 7px 15px;
+    text-transform: lowercase;
+}
+
+.teritory{
+    padding: 20px 0;
+}
+.teritory-wrapper{
+    display: flex;
+}
+.teritory-left{
+    width: 50%;
+    height: 538px;
+    background: #f5f5f5;
+    text-align: center;
+}
+.teritory-text{
+    padding: 90px 30px 51px 47px;
+}
+.teritory-text h2{
+    color: #6D3133;
+    font-size: 2.5rem;
+    padding: 20px 0px;
+}
+
+.teritory-text h1{
+    color: #E00136;
+    font-size: 3.4rem;
+    padding-bottom: 25px;
+}
+.teritory-text h3{
+    color: #6D3133;
+    font-size: 1.7rem;
+}
+
+.teritory-text p{
+    color: #464646;
+    font-size: 1.3em;
+    padding: 64px 0px;
+    text-align: left;
+    line-height: 20px;
+}
+.teritory-text a{
+    text-decoration: none;
+    color: #464646;
+    font-size: 1.5rem;
+    border: 0.8px solid #ccc;
+    padding: 7px 15px;
+    text-transform: lowercase;
+}
+.teritory-right{
+    width: 50%;
+    height: 538px;
+}
+.bx-wrapper {
+  
+    box-shadow:none;
+    
+}
+
+.teritory-slider img{
+    max-width: 100%;
+    height: 538px;
+    object-fit: cover;
+    object-position: 100%;
+}
+
+.breking-news-body h1 {
+    text-align: center;
+    color: #9d1b2c;
+    font-size: 3.4rem;
+    padding: 20px 0px;
+}
+.breking-news-body h3 {
+    text-align: center;
+    color: #6f3557;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 4rem;
+}
+.news-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.breking-news-item {
+    border-left: 1px solid black;
+    padding: 3rem 5rem 5rem 4rem;
+}
+.breking-news-item:first-child{
+    border-left: none;
+}
+
+.breking-news-item h4 {
+    color: #9d1b1c;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+
+.breking-news-item a {
+    color: #9d1b1c;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.breking-news-item p { 
+font-size: 1.3rem;
+line-height: 25px; 
+padding: 4rem 0rem 0rem 0rem;
+}
+
+.news-button {
+    text-align: center;
+    padding: 4rem 0rem;
+}
+.news-button a {
+    text-decoration: none;
+    border: 1px solid #ddd;
+    padding: 10px 40px;
+    color: #111;
+    font-size: 1.4rem;
+    text-transform: lowercase;
+    font-weight: 400;
+}
+
+section.footer-link {
+    background: #921b11;
+    padding-bottom: 30px;
+}
+
+.footer-link-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+
+.link-item h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+}
+
+
+
+
+
+
+
+.link-item ul {
+    list-style: none;
+}
+
+.link-item ul li {
+    line-height: 28px;
+    
+}
+
+.link-item ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: .3s;
+}
+
+.link-item ul li a::before{
+    content: "\f054";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    color: #fff;
+    margin-right: 2px;
+    transition: .3s;
+    
+}
+
+.link-item ul li a:hover{
+    color: #865C54;
+}
+.link-item ul li a:hover::before{
+    color: #865C54;
+}
+
+
+.follow-us {
+    padding: 20px 0px;
+}
+
+.follow-us h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.follow-us span i {
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    font-size: 1.4rem;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 5px;
+}
+.footer-text {
+    padding: 10px 0px 0px 0px;
+}
+.footer-text p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer{
+    background-color: #7C170E;
+}
+footer.footer {
+    padding: 20px;
+}
+footer.footer p {
+    text-align: right;
+    color: #fff;
+}
+
+
+
+
+
+
+     /* Responsive part */
+
+     @media only screen and (max-width: 600px) {
+
+        .content-box {
+            justify-content: start;
+        }
+        .container {
+            width: 100%;
+        }
+        .nav-content {
+           
+            flex-direction: column;
+        }
+        .logo {
+            width: 100%;
+        }
+        .logo figure img {
+            width: 107px;
+        }
+        nav.menu {
+            width: 100%;
+        }
+        .menu ul {
+            flex-direction: column;
+            width: 100%;
+        }
+        nav.menu ul li {
+            border-bottom: 1px solid #fff;
+            line-height: 34px;
+        }
+        nav.menu ul li a {
+            font-size: 14px;
+            font-weight: 400;
+        }
+        nav.menu span i {
+            position: absolute;
+            right: 0;
+            left: 354px;
+            top: 10px;
+        }
+     
+
+    }
